@@ -17,10 +17,10 @@
         "contentobject": {
           "type":"object",
           "properties":{
-            "_blockBackground": {
+            "_articleBackground": {
               "type":"object",
               "required":true,
-              "legend": "Block Background",
+              "legend": "article Background",
               "properties":{
                 "_isActive": {
                   "type":"boolean",
@@ -28,22 +28,19 @@
                   "title": "Enabled",
                   "inputType": { "type": "Boolean", "options": [false, true]},
                   "validators": [],
-                  "help": "Set to true to enable the block background, false to disable it."
+                  "help": "Set to true to enable the article background, false to disable it."
                 }
               }
             }
           }
         },
         "article": {
-          "type":"object"
-        },
-        "block": {
           "type":"object",
           "properties":{
-            "_blockBackground": {
+            "_articleBackground": {
               "type":"object",
               "required":true,
-              "legend": "Block Background",
+              "legend": "article Background",
               "properties":{
                 "mobileSrc": {
                   "type":"string",
@@ -52,7 +49,7 @@
                   "default": "",
                   "inputType": "Asset:image",
                   "validators": ["required"],
-                  "help": "The background image you want shown for this block when the course is viewed at mobile resolution"
+                  "help": "The background image you want shown for this article when the course is viewed at mobile resolution"
                 },
                 "src": {
                   "type":"string",
@@ -61,16 +58,16 @@
                   "default": "",
                   "inputType": "Asset:image",
                   "validators": ["required"],
-                  "help": "The background image you want shown for this block when the course is viewed at desktop resolution"
+                  "help": "The background image you want shown for this article when the course is viewed at desktop resolution"
                 },
                 "mobileBannerHeight": {
                     "type":"number",
                     "required":true,
                     "default": 150,
-                    "title": "Min Block Height on mobile in pixels",
+                    "title": "Min article Height on mobile in pixels",
                     "inputType": "Number",
                     "validators": ["number"],
-                    "help": "Minimum height of the block on a mobile in pixels"
+                    "help": "Minimum height of the article on a mobile in pixels"
                 },
                 "bannerHeight": {
                     "type":"number",
@@ -79,7 +76,7 @@
                     "title": "Banner Height in pixels",
                     "inputType": "Number",
                     "validators": ["number"],
-                    "help": "Minimum height of the block on a desktop in pixels"
+                    "help": "Minimum height of the article on a desktop in pixels"
                 },
                 "backgroundSize": {
                     "type": "string",

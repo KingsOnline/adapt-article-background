@@ -1,18 +1,18 @@
 {
-    "name": "adapt-block-background",
-    "repository": "git://github.com/davegosling/adapt-block-background",
-    "homepage": "https://github.com/davegosling/adapt-block-background",
+    "name": "adapt-article-background",
+    "repository": "git://github.com/kingsonline/adapt-article-background",
+    "homepage": "https://github.com/kingsonline/adapt-article-background",
     "framework": "^2.0.0",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "issues": "The 'backgroundColor' option needs validation adding to it to stop potentially unwanted CSS from being imlemented. Plugin needs browser testing.",
-    "displayName": "Block Background",
-    "extension" : "blockBackground",
-    "description": "Adds the option of implementing a background graphic or colour to a block element.",
-    "main": "/js/adapt-block-background.js",
+    "displayName": "Article Background",
+    "extension" : "articleBackground",
+    "description": "Adds the option of implementing a background graphic or colour to a article element.",
+    "main": "/js/adapt-article-background.js",
     "keywords": [
         "adapt-plugin",
         "adapt-extension"
     ],
     "license": "GPLv3",
-    "targetAttribute": "_blockBackground"
+    "targetAttribute": "_articleBackground"
 }

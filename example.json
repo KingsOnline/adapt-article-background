@@ -23,9 +23,9 @@
 {
     "_id": "b-90",
     "_parentId": "a-25",
-    "_type": "block",
+    "_type": "article",
     "_classes": "",
-    "title": "Block 1",
+    "title": "Article 1",
     "body": "",
     "_blockBackground" : {
         "src": "course/en/images/bg_switcher_04.jpg",
