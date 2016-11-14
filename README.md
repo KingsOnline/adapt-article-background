@@ -14,7 +14,8 @@ NB: the background height will grow with the height of the components added to t
 Full credit for original code goes to Dave Gosling (https://github.com/davegosling/adapt-block-background).
 
 Usage
- ------
+------
+
 
 ##Settings overview
 
