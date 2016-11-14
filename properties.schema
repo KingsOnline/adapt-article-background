@@ -44,20 +44,18 @@
               "properties":{
                 "mobileSrc": {
                   "type":"string",
-                  "required":true,
+                  "required":false,
                   "title": "Background image (Mobile)",
                   "default": "",
                   "inputType": "Asset:image",
-                  "validators": ["required"],
                   "help": "The background image you want shown for this article when the course is viewed at mobile resolution"
                 },
                 "src": {
                   "type":"string",
-                  "required":true,
+                  "required":false,
                   "title": "Background image (Desktop)",
                   "default": "",
                   "inputType": "Asset:image",
-                  "validators": ["required"],
                   "help": "The background image you want shown for this article when the course is viewed at desktop resolution"
                 },
                 "mobileBannerHeight": {
