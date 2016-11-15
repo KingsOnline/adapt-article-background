@@ -67,9 +67,9 @@ define([
 		},
         setBackgroundGraphic: function($articleElement, options) {
             if (Adapt.device.screenSize === 'large') {
-                $articleElement.addClass('article-background-article').remove('article-background-article-mobile').css({'background-image': 'url('+options.src+')', 'background-color': options.backgroundColor + ' !important', 'background-repeat': options.backgroundRepeat, 'background-size': options.backgroundSize, 'background-position':options.backgroundPosition, 'min-height' : options.bannerHeight + 'px'});
+                $articleElement.addClass('article-background-article').remove('article-background-article-mobile').css({'background-image': 'url('+options.src+')', 'background-color': options.backgroundColor + ' !important', 'background-attachment': 'fixed', 'background-repeat': options.backgroundRepeat, 'background-size': options.backgroundSize, 'background-position':options.backgroundPosition, 'min-height' : options.bannerHeight + 'px'});
             } else {
-                $articleElement.addClass('article-background-article-mobile').remove('article-background-article').css({'background-image': 'url('+options.mobileSrc+')', 'background-color': options.backgroundColor + ' !important', 'background-repeat': options.backgroundRepeat, 'background-size': options.backgroundSize, 'background-position':options.backgroundPosition, 'min-height' : options.mobileBannerHeight + 'px'});
+                $articleElement.addClass('article-background-article-mobile').remove('article-background-article').css({'background-image': 'url('+options.mobileSrc+')', 'background-color': options.backgroundColor + ' !important', 'background-attachment': 'fixed', 'background-repeat': options.backgroundRepeat, 'background-size': options.backgroundSize, 'background-position':options.backgroundPosition, 'min-height' : options.mobileBannerHeight + 'px'});
             }
         }
 
