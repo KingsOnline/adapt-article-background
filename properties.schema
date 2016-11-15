@@ -6,6 +6,7 @@
   "properties":{
     "pluginLocations": {
       "type":"object",
+      "required":true,
       "properties":{
         "config": {
           "type":"object"
@@ -13,13 +14,33 @@
         "course": {
           "type":"object"
         },
-        "article": {
+        "contentobject": {
           "type":"object",
           "properties":{
             "_articleBackground": {
               "type":"object",
               "required":true,
-              "legend": "article Background",
+              "legend": "Article Background",
+              "properties":{
+                "_isActive": {
+                  "type":"boolean",
+                  "required":true,
+                  "title": "Enabled",
+                  "inputType": { "type": "Boolean", "options": [false, true]},
+                  "validators": [],
+                  "help": "Set to true to enable the article background, false to disable it."
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type":"object",
+          "properties":{
+            "_articleBackground": {
+              "type":"object",
+              "required":false,
+              "legend": "Article Background",
               "properties":{
                 "mobileSrc": {
                   "type":"string",
@@ -41,7 +62,7 @@
                     "type":"number",
                     "required":true,
                     "default": 150,
-                    "title": "Min article Height on mobile in pixels",
+                    "title": "Min Article Height on mobile in pixels",
                     "inputType": "Number",
                     "validators": ["number"],
                     "help": "Minimum height of the article on a mobile in pixels"
@@ -76,7 +97,7 @@
                     "required": true,
                     "title": "How should the background repeat?",
                     "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                    "default": "no-repeat"
+                    "default": "repeat"
                 },
                 "backgroundColor": {
                     "type": "string",
