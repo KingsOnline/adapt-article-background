@@ -78,7 +78,7 @@
                     "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
                     "default": "no-repeat"
                 },
-                "Color": {
+                "backgroundColor": {
                     "type": "string",
                     "required": true,
                     "title": "The hex color of the background eg: #FFFFFF",
