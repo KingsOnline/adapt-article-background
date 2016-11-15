@@ -74,5 +74,9 @@ define([
         }
 
 	});
+	
+	Adapt.on("pageView:postRender", function(view) {
+		new ArticlekBackgroundView({model: model, el: view.el });
+	});
 
 });
