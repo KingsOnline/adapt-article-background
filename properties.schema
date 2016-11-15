@@ -14,9 +14,6 @@
         "course": {
           "type":"object"
         },
-        "contentobject": {
-          "type":"object",
-        },
         "article": {
           "type":"object",
           "properties":{
