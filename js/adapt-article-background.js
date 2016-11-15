@@ -75,13 +75,4 @@ define([
 
 	});
 
-	Adapt.on("pageView:postRender", function(view) {
-		var model = view.model;
-		if (model.get("_articleBackground")) {
-			if (model.get("_articleBackground")._isActive) {
-				new ArticleBackgroundView({model: model, el: view.el });
-			}
-		}
-	});
-
 });
