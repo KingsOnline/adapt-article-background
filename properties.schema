@@ -76,7 +76,7 @@
                     "required": true,
                     "title": "How should the background repeat?",
                     "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                    "default": "repeat"
+                    "default": "no-repeat"
                 },
                 "backgroundColor": {
                     "type": "string",
