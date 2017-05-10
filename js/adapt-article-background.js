@@ -24,24 +24,23 @@ define([
 			this._articleModelsIndexed = _.indexBy(this._articleModels, "_id");
 
 			this.listenTo(Adapt, "pageView:ready", this.onPageReady);
-            
+
             //Is this the best way to swap out graphics - maybe best to add both graphics on load and then toggle classes on device:changed, device:resize?
             this.listenTo(Adapt, 'device:changed', this.onPageReady);
             this.listenTo(Adapt, 'device:resize', this.onPageReady);
-            
-			
-		
+
+
+
 		},
 
 		onPageReady: function() {
-
 			this.$articleElements = {};
 			this.callbacks = {};
-			
-			for (var i = 0, l = this._articleModels.length; i < l; i++) {
-				var articleModel = this._articleModels[i];				
-				if(!articleModel.get('_articleBackground')) continue;
 
+			for (var i = 0, l = this._articleModels.length; i < l; i++) {
+				var articleModel = this._articleModels[i];
+				if(!articleModel.get('_articleBackground')) continue;
+				if(articleModel.get('_articleBackground').src == "") return;
 				var id = articleModel.get("_id");
 
 				if (!this._firstId) this._firstId = id;
