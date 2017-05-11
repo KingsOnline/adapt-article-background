@@ -1,42 +1,12 @@
-//contentObject.json
-    
-{
-    "_id":"co-10",
-    "_parentId":"course",
-    "_type":"page",
-    "_classes":"",
-    "title":"",
-    "body":"",
-    "_graphic": {
-        "alt": "alt text",
-        "src": "course/en/images/origami-menu-two.jpg"
-    },
-    "linkText":"View",
-    "duration":"2 mins",
-    "_blockBackground": {
-        "_isActive":true
-    }
-}
+//article.json
 
-//blocks.json
-
-{
-    "_id": "b-90",
-    "_parentId": "a-25",
-    "_type": "article",
-    "_classes": "",
-    "title": "Article 1",
-    "body": "",
-    "_blockBackground" : {
-        "src": "course/en/images/bg_switcher_04.jpg",
-        "mobileSrc": "course/en/images/bg_switcher_mobile_04.jpg",
-        "bannerHeight":300,
-        "mobileBannerHeight":150,
-        "backgroundSize":"cover",
-        "backgroundPosition":"center center",
-        "backgroundRepeat":"repeat",
-        "backgroundColor":"transparent"
-        
-       
-    }
+"_articleBackground": {
+  "src": "course/en/images/bg_switcher_04.jpg",
+  "mobileSrc": "course/en/images/bg_switcher_mobile_04.jpg",
+  "bannerHeight": 300,
+  "mobileBannerHeight": 150,
+  "backgroundSize": "cover",
+  "backgroundPosition": "center center",
+  "backgroundRepeat": "repeat",
+  "backgroundColor": "transparent"
 }
