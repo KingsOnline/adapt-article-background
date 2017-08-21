@@ -82,7 +82,15 @@
                     "title": "The size can be set to cover, auto or contain",
                     "inputType": {"type":"Select", "options":["cover","auto","contain"]},
                     "default": "cover"
-                    
+
+                },
+                "backgroundAttachement": {
+                    "type": "string",
+                    "required": true,
+                    "title": "Fix the position background image",
+                    "help": "Fixed can cause some frame rate stutter. Try using scroll for smaller articles.",
+                    "inputType": {"type":"Select", "options":["fixed","scroll"]},
+                    "default": "fixed"
                 },
                 "backgroundPosition": {
                     "type": "string",
@@ -90,7 +98,7 @@
                     "title": "Where to position the background",
                     "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
                     "default": "center center"
-                    
+
                 },
                 "backgroundRepeat": {
                     "type": "string",
@@ -105,7 +113,7 @@
                     "title": "The hex color of the background eg: #FFFFFF",
                     "inputType": "Text",
                     "default": "transparent"
-                  
+
                 }
               }
             }

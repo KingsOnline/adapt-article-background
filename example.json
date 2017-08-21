@@ -8,5 +8,6 @@
   "backgroundSize": "cover",
   "backgroundPosition": "center center",
   "backgroundRepeat": "repeat",
+  "backgroundAttachement": "fixed",
   "backgroundColor": "transparent"
 }
