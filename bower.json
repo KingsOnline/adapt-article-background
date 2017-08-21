@@ -3,7 +3,7 @@
     "repository": "git://github.com/kingsonline/adapt-article-background",
     "homepage": "https://github.com/kingsonline/adapt-article-background",
     "framework": "^2.0.0",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "issues": "The 'backgroundColor' option needs validation adding to it to stop potentially unwanted CSS from being implemented. Plugin needs browser testing.",
     "displayName": "Article Background",
     "extension" : "articleBackground",
