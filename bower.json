@@ -1,12 +1,12 @@
 {
     "name": "adapt-article-background",
     "repository": "git://github.com/kingsonline/adapt-article-background",
-    "homepage": "https://github.com/kingsonline/adapt-article-background",
     "framework": "^2.0.0",
+    "homepage": "https://github.com/kingsonline/adapt-article-background",
     "version": "0.1.3",
     "issues": "The 'backgroundColor' option needs validation adding to it to stop potentially unwanted CSS from being implemented. Plugin needs browser testing.",
     "displayName": "Article Background",
-    "extension" : "articleBackground",
+    "extension": "articleBackground",
     "description": "Adds the option of implementing a background graphic or colour to a article element.",
     "main": "/js/adapt-article-background.js",
     "keywords": [
