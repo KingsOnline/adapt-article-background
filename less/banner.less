@@ -8,18 +8,24 @@
 
     .article {
         background-color: @background-color;
-            
+
+        .ie & {
+          & {
+            background-attachment: scroll !important;
+          }
+        }
+
         &.banner-article, &.banner-article-mobile {
             background-color: transparent;
-            
+
             background-size: cover;
-            background-position: 50% 50%; 
+            background-position: 50% 50%;
             z-index: 0;
             width: 100%;
             max-width: 100%;
 
-            transition: opacity 1s;  
-        
+            transition: opacity 1s;
+
         }
 
     }
