@@ -15,24 +15,7 @@
           "type":"object"
         },
         "contentobject": {
-          "type":"object",
-          "properties":{
-            "_articleBackground": {
-              "type":"object",
-              "required":true,
-              "legend": "Article Background",
-              "properties":{
-                "_isActive": {
-                  "type":"boolean",
-                  "required":true,
-                  "title": "Enabled",
-                  "inputType": { "type": "Boolean", "options": [false, true]},
-                  "validators": [],
-                  "help": "Set to true to enable the article background, false to disable it."
-                }
-              }
-            }
-          }
+          "type":"object"
         },
         "article": {
           "type":"object",

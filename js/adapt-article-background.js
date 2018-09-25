@@ -92,12 +92,10 @@ define([
 
   Adapt.on("pageView:postRender", function(view) {
     var model = view.model;
-    if (model.get("_articleBackground")) {
       new ArticleBackgroundView({
         model: model,
         el: view.el
       });
-    }
   });
 
 });
